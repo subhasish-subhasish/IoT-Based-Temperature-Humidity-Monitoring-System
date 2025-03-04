@@ -11,12 +11,12 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // Wi-Fi credentials
-#define WIFI_SSID "SuvasisPhone"       // Replace with your Wi-Fi SSID
-#define WIFI_PASSWORD "Subhasish"      // Replace with your Wi-Fi password
+#define WIFI_SSID "SuvasisPhone"      
+#define WIFI_PASSWORD "Subhasish"      
 
 // Firebase settings
-#define FIREBASE_HOST "https://suvasis-suvasis-default-rtdb.firebaseio.com"  // Replace with your Firebase URL
-#define FIREBASE_AUTH "94rW0ck5O4zlve9PK7TJUAzKrAXo9RqiDMHQkptK"             // Replace with your Legacy token
+#define FIREBASE_HOST "https://suvasis-suvasis-default-rtdb.firebaseio.com"  
+#define FIREBASE_AUTH "94rW0ck5O4zlve9PK7TJUAzKrAXo9RqiDMHQkptK"             
 
 #define LED_PIN 2
 
@@ -44,7 +44,7 @@ void setup() {
 
   // Set Firebase Config
   config.host = FIREBASE_HOST;                          // Set Firebase URL
-  config.signer.tokens.legacy_token = FIREBASE_AUTH;    // Use the legacy token for auth
+  config.signer.tokens.legacy_token = FIREBASE_AUTH;    // Used the legacy token for auth
 
   // Initialize Firebase
   Firebase.begin(&config, &auth);
